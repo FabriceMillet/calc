@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X-Calc – Professional Calculator</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; line-height: 1.6; }
+    nav a { margin-right: 1em; }
+    h1, h2, h3 { color: #1a4f8b; }
+
+    /* New styles for layout */
+    .features-section {
+      display: flex; /* Use flexbox for side-by-side layout */
+      align-items: flex-start; /* Align items to the top */
+      gap: 2em; /* Space between content and image */
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    }
+
+    .features-content {
+      flex: 1; /* Allow content to take up available space */
+      min-width: 300px; /* Ensure content doesn't get too narrow */
+    }
+
+    .features-image {
+      max-width: 250px; /* Adjust image size as needed */
+      height: auto;
+      display: block; /* Remove extra space below image */
+    }
+
+    @media (max-width: 768px) {
+      .features-section {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items when stacked */
+      }
+      .features-image {
+        margin-top: 1em; /* Add some space above image when stacked */
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+
+  <h1>X-Calc – Vintage HP25 Calculator</h1>
+  <p>An ergonomic scientific calculator using RPN (Reverse Polish Notation) for professional and educational use. Experience the precision of vintage HP calculators on your modern device.</p>
+
+  <div class="features-section">
+    <div class="features-content">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>RPN (Reverse Polish Notation):</strong> Efficient calculations using the HP25 method.</li>
+        <li><strong>Ergonomic Design:</strong> Portrait/landscape orientation for iPhone and iPad.</li>
+        <li><strong>Voice Recognition:</strong> Activate keyboard or voice dictation with a shake or tap.</li>
+        <li><strong>Easy Sharing:</strong> Share results via Facebook, Twitter, or email.</li>
+        <li><strong>Display Formats:</strong> Fixed, scientific, and engineering with custom decimals.</li>
+        <li><strong>Advanced Functions:</strong> Trigonometry, hyperbolic functions, statistics, and more.</li>
+      </ul>
+    </div>
+    <img src="HP-25-front.png" alt="HP-25 Calculator Front" class="features-image">
+  </div>
+
+  <h2>Programming & Logs</h2>
+  <ul>
+    <li>Store up to 10 custom programs (e.g., quadratic solver, f(t)=t×sin(t)).</li>
+    <li>Visual graphing of functions like y=f(x).</li>
+    <li>Calculation logbook with copy/paste support.</li>
+    <li>Visual feedback: blinking indicators and wobbling digits.</li>
+  </ul>
+
+  <h2>Why RPN?</h2>
+  <ul>
+    <li>No parentheses needed</li>
+    <li>Fewer keystrokes</li>
+    <li>Left-to-right logic</li>
+    <li>Ideal for engineering, finance, education</li>
+  </ul>
+
+  <footer>
+    <p>© 2024 X-Calc. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
